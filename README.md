@@ -27,3 +27,15 @@
      const spread = {...target};
      console.log(spread);  // will return spread = { a: 1, b: 5, c:7 }; as a copy of target
    ```
+  
+  
+### * Deep Clone
+    
+   ##### For deep cloning, we need to use other alternatives because Object.assign() copies property values. If the source     value is a reference to an object, it only copies that reference value.
+   ```javascript
+       obj1 = { a: 0 , b: { c: 0}};
+       let obj3 = JSON.parse(JSON.stringify(obj1));
+       obj1.a = 4;
+       obj1.b.c = 4;
+        console.log(JSON.stringify(obj3)); // { a: 0, b: { c: 0}}
+   ```

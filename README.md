@@ -39,3 +39,11 @@
        obj1.b.c = 4;
         console.log(JSON.stringify(obj3)); // { a: 0, b: { c: 0}}
    ```
+   
+   ### 
+ ```javascript 
+     const condition = authUser => authUser != null;
+
+    // same with this short version
+     const condition = authUser => !!authUser;
+ ```

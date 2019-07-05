@@ -40,7 +40,7 @@
         console.log(JSON.stringify(obj3)); // { a: 0, b: { c: 0}}
    ```
    
-   ### 
+   ### Abbrev. code
  ```javascript 
      const condition = authUser => authUser != null;
 
